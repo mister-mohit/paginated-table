@@ -3,7 +3,6 @@ import { Table } from "antd";
 import { filterData } from "./util/filter";
 import { getColumns } from "./util/getColumns";
 
-
 // eslint-disable-next-line react/prop-types
 const TableComp = ({
   posts,
@@ -27,12 +26,11 @@ const TableComp = ({
     if (extra.action === "filter") {
       console.log(filters);
       setFilteredTags(filters.tags ? filters.tags : []);
-
     }
   };
 
   return (
-    <div >
+    <div className="max-h-screen">
       <Table
         rowKey={"id"}
         columns={columns}
@@ -43,7 +41,7 @@ const TableComp = ({
           total: dataToShow.length,
           onChange: handlePageChange,
           current: page,
-          position: ["bottomCenter"]
+          position: ["bottomCenter"],
         }}
         loading={isLoading}
       />
