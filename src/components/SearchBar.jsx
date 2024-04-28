@@ -17,7 +17,7 @@ const SearchBar = ({ search, setSearch, filteredTags }) => {
         className="w-full  p-2 rounded-lg"
       />
 
-      {filteredTags.length > 0 && <Filter filteredTags={filteredTags} />}
+      {filteredTags?.length > 0 && <Filter filteredTags={filteredTags} />}
     </div>
   );
 };

@@ -25,7 +25,8 @@ const TableComp = ({
   const handleTableChange = (pagination, filters, sorters, extra) => {
     console.log(extra);
     if (extra.action === "filter") {
-      setFilteredTags(filters.tags);
+      console.log(filters);
+      setFilteredTags(filters.tags ? filters.tags : []);
 
     }
   };
