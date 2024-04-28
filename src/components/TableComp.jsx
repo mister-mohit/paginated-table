@@ -22,9 +22,7 @@ const TableComp = ({
   };
 
   const handleTableChange = (pagination, filters, sorters, extra) => {
-    console.log(extra);
     if (extra.action === "filter") {
-      console.log(filters);
       setFilteredTags(filters.tags ? filters.tags : []);
     }
   };
@@ -44,6 +42,7 @@ const TableComp = ({
           position: ["bottomCenter"],
         }}
         loading={isLoading}
+        scroll={true}
       />
     </div>
   );

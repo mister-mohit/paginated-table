@@ -1,25 +1,31 @@
 
+
 export const getColumns = (filteredTags) => {
   const columns = [
     {
       title: "Id",
       dataIndex: "id",
+      key: "id",
     },
     {
       title: "Title",
       dataIndex: "title",
+      key: "title",
     },
     {
       title: "Body",
       dataIndex: "body",
+      key: "body",
     },
     {
       title: "UserID",
       dataIndex: "userId",
+      key: "userId",
     },
     {
       title: "Tags",
       dataIndex: "tags",
+      key: "tags",
       filters: [
         {
           text: "History",
@@ -30,37 +36,37 @@ export const getColumns = (filteredTags) => {
           value: "american",
         },
         {
-            text: "Crime",
-            value: "crime"
+          text: "Crime",
+          value: "crime",
         },
         {
-            text: "French",
-            value: "french"
+          text: "French",
+          value: "french",
         },
         {
-            text: "Fiction",
-            value: "fiction"
+          text: "Fiction",
+          value: "fiction",
         },
         {
-            text: "English",
-            value: "english"
+          text: "English",
+          value: "english",
         },
         {
-            text: "Magical",
-            value: "magical"
+          text: "Magical",
+          value: "magical",
         },
         {
-            text: "Love",
-            value: "love"
+          text: "Love",
+          value: "love",
         },
         {
-            text: "Classic",
-            value: "classic"
+          text: "Classic",
+          value: "classic",
         },
         {
-            text: "Mystery",
-            value: "mystery"
-        }
+          text: "Mystery",
+          value: "mystery",
+        },
       ],
       // eslint-disable-next-line react/prop-types
       filteredValue: filteredTags,
@@ -71,6 +77,7 @@ export const getColumns = (filteredTags) => {
     {
       title: "Reactions",
       dataIndex: "reactions",
+      key: "reactions",
     },
   ];
 

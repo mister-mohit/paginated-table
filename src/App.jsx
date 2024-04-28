@@ -29,7 +29,6 @@ const App = () => {
 
   useEffect(() => {
     if (data) {
-      console.log(data);
       setPosts(data.posts);
     }
   }, [data]);
